@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos — DRE</title>
+  <link rel="stylesheet" href="events.css">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+  <script src="https://apis.google.com/js/api:client.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <h1>DRE de Capitão Poço</h1>
+    <nav class="top-nav"><a href="login.html">Cadastro</a></nav>
+  </header>
+  <div class="subnav">
+    <a href="#sobre">Sobre</a>
+    <a href="#responsaveis">Responsáveis</a>
+    <a href="#contatos">Contatos</a>
+  </div>
+
+  <main class="layout">
+    <aside class="left-col">
+      <h2>Tópicos</h2>
+      <ul class="topics">
+        <li>1. Palestras</li>
+        <li>2. Workshops</li>
+        <li>3. Painéis</li>
+        <li>4. Exposições</li>
+        <li>5. Networking</li>
+        <li>6. Encerramento</li>
+      </ul>
+    </aside>
+
+    <section class="center-col">
+      <div id="calendar-root" class="calendar-root"></div>
+      <div id="feed-root" class="feed-root hidden"></div>
+    </section>
+
+    <aside class="right-col">
+      <div class="panel">
+        <h3>Usuário</h3>
+        <div id="auth-root">
+          <div id="gSignInWrapper">
+            <span class="label">Entrar com:</span>
+            <div id="customBtn" class="customGPlusSignIn" title="Clique aqui para fazer login com sua conta institucional">
+              <span class="icon"></span>
+              <span class="buttonText">login</span>
+            </div>
+          </div>
+
+        </div>
+        <div id="name" style="margin-top:8px;color:var(--muted);"></div>
+      </div>
+
+      <div id="create-event" style="margin-top:12px;display:none">
+        <h4>Cadastrar Evento</h4>
+        <form id="event-form">
+          <label>Data<br><input type="date" id="ev-date" required></label><br>
+          <label>Título<br><input type="text" id="ev-title" required></label><br>
+          <label>Descrição<br><textarea id="ev-desc" rows="3"></textarea></label><br>
+          <button type="submit">Salvar evento</button>
+        </form>
+      </div>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© DRE de Capitão Poço — Criador: Rafael Mendonça —  Contato: contato@dre-cp.br</div>
+  </footer>
+
+  <script src="events.js"></script>
+</body>
+
+</html>
