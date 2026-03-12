@@ -18,6 +18,7 @@ Site estático com as páginas principais e os recursos em `DRE/` (CSS e JS). Id
 
 1. Clone este repositório.
 2. Abra `Index.html` no seu navegador (`File -> Open` ou arraste o arquivo para o navegador).
+3. Pode acessar atraves do link <link>https://rafael1102.github.io/DRE/<link>
 
 Não há dependências ou build steps — é um site estático.
 
@@ -36,5 +37,6 @@ GitHub: https://github.com/Rafael1102
 
 
 ----
+
 
 Caso queira, eu adapto o README com mais seções (ex.: deploy no GitHub Pages, screenshots, roteiro de desenvolvimento).
